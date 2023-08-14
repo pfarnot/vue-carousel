@@ -1,6 +1,8 @@
 import './assets/main.css'
-
 import { createApp } from 'vue'
+import VueLazyload from 'vue-lazyload'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(VueLazyload)
+app.mount('#app')

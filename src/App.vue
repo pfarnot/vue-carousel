@@ -1,6 +1,8 @@
 <script>
 
+
 import Carousel from './components/carousel/Carousel.vue'
+
 export default {
 
   name: "App",
@@ -25,12 +27,10 @@ export default {
 </template>
 
 <style scoped>
-
 .carousel-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-
 </style>

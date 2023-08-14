@@ -2,9 +2,8 @@
     <div class="carousel">
         <div class="carousel-inner">
 
-            <carousel-indicator 
-            v-if="indicators"
-            :total="slides.length" :current-index="currentSlide" @switch="switchSlide($event)">
+            <carousel-indicator v-if="indicators" :total="slides.length" :current-index="currentSlide"
+                @switch="switchSlide($event)">
             </carousel-indicator>
             <carousel-item v-for="(slide, index) in slides" :slide="slide" :key="`item-${index}`"
                 :current-slide="currentSlide" :index="index" :direction="direction" @mouseenter="stopSlideTimer"
@@ -35,7 +34,7 @@ export default {
             type: Boolean,
             default: false,
         },
-        interval:{
+        interval: {
             type: Number,
             default: 5000,
         }
